@@ -1,0 +1,897 @@
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px 0 15px;
+}
+
+/*-----Header-----*/
+.header{
+	padding: 5px 0 5px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	/*!background: rgba(12, 0, 61, 0.5);
+	*/opacity: 0.9;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+
+.header_opacity{
+	opacity: 1;
+	background-color: rgba(15, 0, 64, 0.7);
+}
+
+.header_hidden {
+	transform: translateY(-100%);
+}
+
+.header__main{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+	margin-top: 15px;
+	align-items: center;
+}
+
+.logo__main{
+	width: 140px;
+	height: 46px;
+	position: relative;
+}
+
+.logo__main img{
+	-o-object-fit: contain;
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.header__menu{
+	display: flex;
+}
+
+	@media(max-width: 600px){
+		.header__menu{
+			display: none;
+		}	
+}
+
+.header__menu-ul{
+	display: flex;
+	padding: 0 10px 0 10px;
+}
+
+.header__menu-li{
+	font-size: 18px;
+	line-height: 21px;
+	color: #fff;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	padding: 0 15px 0 15px;
+	transition: .3s;
+}
+
+.header__menu-li:hover{
+		color: #e7e4ff;
+}
+
+.header__menu-li a{}
+
+.phone__menu{
+	display: block;
+}
+
+	@media(max-width: 600px){
+		.phone__menu{
+			display: block;
+		}	
+}
+
+.phone__open{
+	width: 35px;
+	height: 35px;
+	position: relative;
+}
+
+.phone__open svg{
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.phone__menu-nav{
+	width: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow-x: hidden;
+	transition: 0.3s;
+	height: 100%;
+	background: #0C003D;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+
+.phone__close{
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 25px;
+	right: 15px;
+}
+
+.phone__close svg{
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+.phone__menu-ul{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.phone__menu-li{
+	padding: 5px 0;
+	color: #fff;
+}
+
+.phone__menu-a{font-size: 16px;}
+
+/*-----Main------*/
+.main{
+	flex: 1 1 auto;
+}
+
+.main__background{
+	background-image: url(../img/background/back-main.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #272727;
+	height: 100vh;
+	position: relative;
+}
+
+@media(max-width:800px){
+	.main__background{
+		background-position-x: -625px;
+}
+}
+
+@media(max-width:450px){
+	.main__background{
+		background-position-x: -675px;
+}
+}
+
+.background__rectangle{background: linear-gradient(270deg, rgba(38, 0, 83, 0) 1.62%, #260053 49.07%, rgba(38, 0, 83, 0) 98.52%);-webkit-filter: drop-shadow(20px 20px 90px rgba(46, 1, 92, 0.5));filter: drop-shadow(20px 20px 90px rgba(46, 1, 92, 0.5));position: absolute;bottom: -250px;left: 0;height: 300px;width: 100%;}
+
+
+.background__gradient{
+	width: 100%;
+	height: calc( 100px + (392 - 100) * ((100vw - 600px ) / (1440 - 600)));
+	position: absolute;
+	bottom: -320px;
+	left: 0;
+	background: linear-gradient(270deg, rgba(38, 0, 83, 0) 1.62%, #260053 49.07%, rgba(38, 0, 83, 0) 98.52%);
+	-webkit-filter: drop-shadow(20px 20px 90px rgba(46, 1, 92, 0.5));
+	filter: drop-shadow(20px 20px 90px rgba(46, 1, 92, 0.5));
+}
+
+.main__title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+}
+
+.main__section {}
+
+.main__section-title {
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: 700;
+	font-size: calc( 22px + (61 - 22) * ((100vw - 320px ) / (1440 - 320)));
+	line-height: calc( 35px + (65 - 35) * ((100vw - 320px ) / (1440 - 320)));
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.color__title{
+	background: linear-gradient(99.41deg, #FFB018 -12.63%, #FF2900 84.78%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #0B2349;
+}
+
+.main__button {
+	margin-top: 50px;
+}
+
+.main__button-btn {
+	background: linear-gradient(99.41deg, #FFB018 -12.63%, #FF2900 84.78%);
+	border: 3px solid #FFFFFF;
+	border-radius: 133.962px;
+	padding: calc( 12px + (25 - 12) * ((100vw - 320px ) / (1440 - 320))) calc( 50px + (53 - 50) * ((100vw - 320px ) / (1440 - 320))) calc( 12px + (25 - 12) * ((100vw - 320px ) / (1440 - 320))) calc( 20px + (33 - 20) * ((100vw - 320px ) / (1440 - 320)));
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	color: #fff;
+	position: relative;
+}
+
+.main__button-btn:after{
+	content: " ";
+	background-image: url("../img/icon/arrow.svg");
+	position: absolute;
+	top: calc( 20px + (30 - 20) * ((100vw - 320px ) / (1440 - 320)));
+	right: 15px;
+	z-index: 1;
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+	transition: 0.3s;
+}
+
+.main__button-btn:hover:after{
+transform: translateX(5px);
+	transition: 0.3s;
+}
+
+.planets{
+	padding: 10px 0 20px 0;
+}
+
+.planets__section{
+	/*! margin-top: 70px; */
+	z-index: 10;
+	position: relative;
+}
+
+.planets__title{
+	color: #fff;
+	font-family: Bebas Neue;
+	font-style: normal;
+	text-align: center;
+	letter-spacing: 0.01em;
+	padding: 10px 5px;
+	font-size: calc( 24px + (55 - 24) * ((100vw - 320px ) / (1440 - 320)));
+	line-height: calc( 35px + (60 - 35) * ((100vw - 320px ) / (1440 - 320)));
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.planets__flex{
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 50px;
+}
+
+@media(max-width: 801px){
+	.planets__flex{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.planets__card{
+	background: linear-gradient(180.41deg, rgba(38, 1, 83, 0) -14.63%, #3b166b 100%);
+	border-radius: 10px;
+	padding: 10px 30px 10px 30px;
+	max-width: 320px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	justify-content: center;
+	max-height: 400px;
+}
+
+.card__saturn{
+	border-radius: 10px;
+	padding: 10px 30px 10px 30px;
+	max-width: 360px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	/*! transform: translateY(20px); */
+	max-height: 430px;
+	-webkit-filter: drop-shadow(20px 20px 90px rgba(46, 1, 92, 0.5));
+	filter: drop-shadow(20px 20px 90px rgba(46, 1, 92, 0.5));
+	background: linear-gradient(180deg, rgba(255, 7, 114, 0) 12.91%, #FF5A09 88.32%);
+}
+
+.planets__card-img{
+	width: calc( 150px + (219 - 150) * ((100vw - 600px ) / (1440 - 600)));
+	height: calc( 150px + (219 - 150) * ((100vw - 600px ) / (1440 - 600)));
+	position: relative;
+}
+
+.planets__card-img img{
+	height: 100%;
+	width: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.planets__card-saturn{
+	width: calc( 224px + (294 - 224) * ((100vw - 600px ) / (1440 - 600)));
+	height: calc( 224px + (294 - 224) * ((100vw - 600px ) / (1440 - 600)));
+}
+
+@media(max-width: 800px){
+	.planets__card-img{
+	width: calc( 190px + (220 - 190) * ((100vw - 320px ) / (800 - 320)));
+	height: calc( 190px + (220 - 190) * ((100vw - 320px ) / (800 - 320)));
+}
+	.planets__card-saturn{
+	width: calc( 230px + (294 - 230) * ((100vw - 320px ) / (800 - 320)));
+	height: calc( 230px + (294 - 230) * ((100vw - 320px ) / (800 - 320)));
+}
+}
+
+.planets__card-title{
+	color: #fff;
+	padding: 10px 5px 10px 5px;
+	font-size: 1.5rem;
+}
+
+.planets-hr{
+	width: 40px;
+	height: 3px;
+	background: #ff6c00;}
+
+.planets__card-text{
+	color: #fff;
+	padding: 10px 5px;
+	font-size: 2rem;
+}
+
+.visit{
+	padding: 10px 0;
+	margin-top: 50px;
+	position: relative;
+}
+
+.visit__flex{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(361px,1fr));
+	gap: 20px;
+}
+
+.visit__img{
+	width: 100%;
+}
+
+@media(max-width: 801px){
+	.visit__img{
+		grid-row: 2;
+	}
+}
+
+.visit__img img{
+	width: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+.visit__main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+	align-items: flex-start;
+}
+
+.visit__section{}
+
+.visit__title{
+	color: #fff;
+	font-size: calc( 31px + (61 - 31) * ((100vw - 550px ) / (1440 - 550)));
+	text-transform: uppercase;
+	padding: 10px 0;
+	line-height: calc( 40px + (65 - 40) * ((100vw - 550px ) / (1440 - 550)));
+}
+
+@media(max-width: 800px){
+	.visit__title br{
+		display: none;
+	}
+	.visit__title{
+		text-align: center;
+	}
+}
+
+.visit__button{
+	background: linear-gradient(99.41deg, #FFB018 -12.63%, #FF2900 84.78%);
+	border: 3px solid #FFFFFF;
+	border-radius: 133.962px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	color: #fff;
+	position: relative;
+	padding: calc( 12px + (25 - 12) * ((100vw - 320px ) / (1440 - 320))) calc( 50px + (53 - 50) * ((100vw - 320px ) / (1440 - 320))) calc( 12px + (25 - 12) * ((100vw - 320px ) / (1440 - 320))) calc( 20px + (33 - 20) * ((100vw - 320px ) / (1440 - 320)));
+}
+
+@media(max-width:800px){
+	.visit__button{
+		margin: 0 auto;
+	}
+}
+
+.visit__button:after{
+	content: " ";
+	background-image: url("../img/icon/arrow.svg");
+	position: absolute;
+	top: calc( 20px + (30 - 20) * ((100vw - 320px ) / (1440 - 320)));
+	right: 15px;
+	z-index: 1;
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+	transition: 0.3s;
+}
+
+.visit__button:hover:after{
+	transform: translateX(5px);
+	transition: 0.3s;
+}
+
+
+.background__star{
+	width: 100%;
+	position: absolute;
+	top: calc( -26px + (-110 + 26) * ((100vw - 320px ) / (1440 - 320)));
+	left: 0;
+	z-index: -1;
+	mix-blend-mode: color-dodge;
+}
+
+.background__star img{
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.visit__planets{
+	width: calc( 100px + (160 - 100) * ((100vw - 800px ) / (1440 - 800)));
+	height: calc( 100px + (160 - 100) * ((100vw - 800px ) / (1440 - 800)));
+	position: absolute;
+	z-index: -1;
+	top: calc( 58px + (55 - 58) * ((100vw - 800px ) / (1440 - 800)));
+	left: calc( 42px + (150 - 42) * ((100vw - 800px ) / (1440 - 800)));
+}
+
+@media(max-width:800px){
+	.visit__planets{
+		display: none;
+	}
+}
+
+.visit__planets img{
+	width: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+.spaceship__visit{
+	width: calc( 230px + (300 - 230) * ((100vw - 800px ) / (1440 - 800)));
+	height: calc( 160px + (250 - 160) * ((100vw - 800px ) / (1440 - 800)));
+	position: absolute;
+	top: 0;
+	right: calc( -126px + (-167 + 126) * ((100vw - 800px ) / (1440 - 800)));
+	z-index: -1;
+	transform: scale(-1,1);
+	-webkit-transform:scale(-1,1);
+	-moz-transform:scale(-1,1);
+	-ms-transform:scale(-1,1);
+	-o-transform:scale(-1,1);
+}
+
+@media(max-width:801px){
+	.spaceship__visit{
+		display: none;
+	}
+}
+
+
+.spaceship__visit img{
+	width: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+.vector__visit{
+	width: calc( 730px + (860 - 730) * ((100vw - 800px ) / (1440 - 800)));
+	height: calc( 460px + (560 - 460) * ((100vw - 800px ) / (1440 - 800)));
+	position: absolute;
+	z-index: -1;
+}
+
+.vector__up{
+	top: calc( -90px + (-110 + 90) * ((100vw - 800px ) / (1440 - 800)));
+	left: calc( -250px + (-110 + 250) * ((100vw - 800px ) / (1440 - 800)));
+	/*! transform: scale(-1,1); */
+	/*! -webkit-transform:scale(-1,1); */
+	/*! -moz-transform:scale(-1,1); */
+	-ms-transform:scale(-1,1);
+	-o-transform:scale(-1,1);
+}
+
+.vector__down{
+	top: calc( -63px + (-110 + 63) * ((100vw - 800px ) / (1440 - 800)));
+	right: calc( -358px + (-171 + 358) * ((100vw - 800px ) / (1440 - 800)));
+	transform: matrix(-1, 0, 0, 1, 0, 0);
+	mix-blend-mode: normal;
+}
+
+@media(max-width:801px){
+	.vector__visit{
+		display: none;
+	}
+}
+
+
+.vector__visit img{
+	width: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+.travel{
+	position: relative;
+}
+
+.travel__grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(376px,1fr));
+	gap: 20px;
+}
+
+@media(max-width: 400px){
+	.travel__grid{
+	grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+
+}
+}
+
+.travel__main{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 30px;
+}
+
+.travel__section{
+	margin-top: calc( 0px + (150 - 0) * ((100vw - 800px ) / (1440 - 800)));
+}
+
+
+@media(max-width:800px){
+	.travel__section{
+	margin-top: 0;
+}
+}
+
+.travel__title{
+	color: #fff;
+	font-size: calc( 20px + (38 - 20) * ((100vw - 320px ) / (1440 - 320)));
+	text-transform: uppercase;
+	padding: 20px 0;
+	line-height: calc( 32px + (45 - 32) * ((100vw - 320px ) / (1440 - 320)));
+	font-weight: 700;
+}
+
+.travel__text{
+	color: #fff;
+	font-size: calc( 18px + (21 - 18) * ((100vw - 802px ) / (1440 - 802)));
+	padding: 20px 0;
+	max-width: 500px;
+	line-height: 26px;
+	letter-spacing: 1px;
+}
+
+@media(max-width:800px){
+	.travel__title{
+		text-align: center;
+	}
+	.travel__section{
+		width: 100%;
+	}
+	.travel__text{
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+.spaceship__travel{
+	width: calc( 175px + (360 - 175) * ((100vw - 800px ) / (1440 - 800)));
+	height: calc( 128px + (260 - 128) * ((100vw - 800px ) / (1440 - 800)));
+	position: absolute;
+	bottom: calc( 60px + (0 - 60) * ((100vw - 800px ) / (1440 - 800)));
+	left: calc( -40px + (-98 + 40) * ((100vw - 800px ) / (1440 - 800)));
+	z-index: -1;
+}
+
+@media(max-width:801px){
+	.spaceship__travel{display: none;}
+}
+
+
+.spaceship__travel img{
+	width: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+.travel__img{
+	width: 100%;
+}
+
+.travel__img img{
+	width: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+
+.email{
+	margin-top: calc( 150px + (350 - 150) * ((100vw - 320px ) / (1440 - 320)));
+}
+
+.email__container{
+	position: relative;
+}
+
+.email__main{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(180.41deg, #4f1d91 -12.63%, #33135d 84.78%);
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	height: calc( 210px + (435 - 210) * ((100vw - 320px ) / (1440 - 320)));
+	bottom: calc( -105px + (-217.5 + 105) * ((100vw - 320px ) / (1440 - 320)));
+	display: flex;
+	overflow: hidden;
+}
+
+.spaceship__footer-main {
+	position: relative;
+}
+.spaceship__footer {
+	position: absolute;
+	transform: rotate(6.13deg);
+	width: 508px;
+	height: 435px;
+	top: 20px;
+	left: -17px;
+}
+
+.spaceship__footer img{
+	width: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	z-index: 100;
+}
+
+.form__title{
+	color: #fff;
+	font-size: calc( 27px + (41 - 27) * ((100vw - 802px ) / (1440 - 802)));
+	text-transform: uppercase;
+	padding: 10px 0;
+	line-height: calc( 25px + (45 - 25) * ((100vw - 320px ) / (1440 - 320)));
+	max-width: 670px;
+	text-align: center;
+}
+
+.form__main{
+	padding: 10px 0;
+	display: flex;
+	margin-top: 10px;
+}
+
+.feedback__login{
+	max-width: 300px;
+	background: #2e1155;
+	padding: calc( 5px + (10 - 5) * ((100vw - 320px ) / (1440 - 320))) 10px calc( 5px + (10 - 5) * ((100vw - 320px ) / (1440 - 320))) 20px;
+	border-radius: 10px 0 0 10px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: calc( 15px + (21 - 15) * ((100vw - 320px ) / (1440 - 320)));
+	line-height: 28px;
+	color: #fff;
+	-webkit-border-radius: 10px 0 0 10px;
+	-moz-border-radius: 10px 0 0 10px;
+	-ms-border-radius: 10px 0 0 10px;
+	-o-border-radius: 10px 0 0 10px;
+}
+
+.feedback__submit{
+	border-radius: 0 10px 10px 0;
+	padding: calc( 5px + (10 - 5) * ((100vw - 320px ) / (1440 - 320)));
+	cursor: pointer;
+	background: linear-gradient(99.41deg, #FFB018 -12.63%, #FF2900 84.78%);
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: calc( 15px + (21 - 15) * ((100vw - 320px ) / (1440 - 320)));
+	line-height: 28px;
+	text-align: center;
+	color: #fff;
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+	-ms-border-radius: 0 10px 10px 0;
+	-o-border-radius: 0 10px 10px 0;
+}
+
+.star__form-main {
+	position: relative;
+}
+.star__form {
+	position: absolute;
+	width: 280px;
+	height: 205px;
+	top: 0;
+	right: 0;
+}
+
+.star__form img{
+	width: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+}
+
+
+/*-----Footer-----*/
+.footer{
+	flex: 0 0 auto;
+	background: linear-gradient(180.41deg, #4f1d91 -12.63%, #33135d 84.78%);
+	padding-bottom: 50px;
+}
+
+.footer__main{
+	margin-top: calc( 150px + (297.5 - 150) * ((100vw - 320px ) / (1440 - 320)));
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.footer__right{flex: 1 1 auto;max-width: 700px;}
+
+.footer__list{
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	flex-wrap: wrap;
+}
+
+.footer__list-ul{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.footer__list-li{
+	color: #d0d0d0;
+	padding: 2px 2px;
+	cursor: pointer;
+}
+
+.footer__list-li:first-child{
+	color: #fff;
+	padding: 0 2px 7px 2px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.footer__social{}
+
+.social__text{
+	color: #d0d0d0;
+}
+
+.social__img-flex{
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.social__img{
+	max-width: 30px;
+	max-height: 30px;
+} 
+
+.social__img img{
+	width: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+	cursor: pointer;
+}
+
+.footer__copyright{
+	display: flex;
+	justify-content: space-between;
+	border-top: solid 1px #330F6F;
+	padding-top: 20px;
+}
+
+.footer__copyright-text{
+	color: #d0d0d0;
+}

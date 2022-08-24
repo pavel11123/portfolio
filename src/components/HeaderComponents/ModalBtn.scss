@@ -1,0 +1,16 @@
+@import "./mixins.scss";
+
+.ModalBtn {
+  width: 68px;
+  max-height: 40px;
+  cursor: pointer;
+
+  @media (max-width: 1280px) {
+    width: adaptiv-number(55, 68, 1280, 320);
+  }
+
+  svg {
+    width: 100%;
+    max-height: rem(40);
+  }
+}

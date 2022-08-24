@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main/css/style.css?v=19">
+	<link rel="stylesheet" type="text/css" href="main/css/index.css?v=19">
+	<link rel="stylesheet" type="text/css" href="main/css/null.css?v=19">
+	<link type="image/x-icon" href="main/img/icon/favicon.ico" rel="shortcut icon">
+	<script src="main/js/script.js?v=19" defer></script>
+	<script src="main/js/popupForm.js?v=19" defer></script>
+	<title>Коробко Павел - Разработка сайтов, вёрстка, дизайн</title>
+</head>
+
+<body id="phone__menu-id-body">
+
+	<div class="wrapper">
+		<div class="grid__areas">
+
+			<aside class="sidebar">
+				<div class="sidebar__menu">
+					<div class="sidebar__menu-top">
+						<div class="accordion__menu">
+							<h2 class="sidebar__menu-title">Меню</h2>
+							<nav class="sidebar__list">
+								<ul class="sidebar__menu-ul">
+									<li class="sidebar__menu-li"><a href="index.html"
+											class="sidebar__menu-a icon__dashboard">Главная</a></li>
+									<li class="sidebar__menu-li"><a href="about.html" class="sidebar__menu-a icon__about">Обо
+											мне</a></li>
+									<li class="sidebar__menu-li"><a href="portfolio.html"
+											class="sidebar__menu-a icon__portfolio">Портфолио</a></li>
+									<li class="sidebar__menu-li"><a href="info.html" class="sidebar__menu-a icon__info">Инфо</a>
+									</li>
+									<li class="sidebar__menu-li"><a href="feedback.html"
+											class="sidebar__menu-a icon__order">Заказать</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="accordion__btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</aside>
+
+			<main class="main">
+
+				<div class="phone__main">
+					<div class="phone__menu">
+						<nav class="phone__list">
+							<div class="phone__block icon__page">
+								<a href="index.html">
+									<div class="phone__icon">
+										<img src="main/img/icon/home.svg" alt="dashboard">
+									</div>
+								</a>
+							</div>
+							<div class="phone__block">
+								<a href="about.html">
+									<div class="phone__icon">
+										<img src="main/img/icon/user.svg" alt="dashboard">
+									</div>
+								</a>
+							</div>
+							<div class="phone__block">
+								<a href="portfolio.html">
+									<div class="phone__icon">
+										<img src="main/img/icon/pc.svg" alt="dashboard">
+									</div>
+								</a>
+							</div>
+							<div class="phone__block">
+								<a href="info.html">
+									<div class="phone__icon">
+										<img src="main/img/icon/graphic.svg" alt="dashboard">
+									</div>
+								</a>
+							</div>
+							<div class="phone__block">
+								<a href="feedback.html">
+									<div class="phone__icon">
+										<img src="main/img/icon/order.svg" alt="dashboard">
+									</div>
+								</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<header class="header">
+					<div class="header__flex">
+						<div class="header__logo">
+							<img src="main/img/icon/logo.svg" alt="logo">
+						</div>
+						<a href="index.html">
+							<div class="header__society">
+								<h2 class="profile__name">Korobko Pavel</h2>
+								<div class="header__profile-photo">
+									<img src="main/img/photo/profile.jpeg" alt="logo">
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="header__bottom">
+						<a href="index.html" class="nav__index nav__main">
+							<h2 class="header__nav">Главная</h2>
+						</a>
+						<div class="popup__main">
+							<button onclick="popup__open()" class="popup__btn">Заказать</button>
+							<div id="popup-id" class="popup">
+								<div class="popup__card">
+									<div onclick="popup__close()" class="popup__card-close"></div>
+									<div class="popup__content">
+										<form action="send_mail.php" name="Popupform" method="POST" class="form__popup">
+											<div class="popup__grid">
+												<input type="text" name="name" id="name" data-reg="^[А-ЯЁ][а-яё]*$"
+													placeholder="Имя" class="popup__login popup__input">
+												<input type="email" name="email" id="email"
+													data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" placeholder="Email*"
+													class="popup__email popup__input" required="">
+												<input type="text" name="phone" id="phone" data-reg="^((\+7|7|8)+([0-9]){10})$"
+													placeholder="Номер телефона" class="popup__subject popup__input">
+												<textarea name="message" placeholder="Сообщение*"
+													class="popup__message popup__input" required=""></textarea>
+												<input type="submit" id="Popupbutton" value="Отправить"
+													class="popup__submit popup__input">
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<div class="content">
+					<div class="index__grid">
+						<div class="index__grid-block grid__block-big">
+							<div class="block__big-main">
+								<div class="absolute__block block__css">
+									<img src="main/img/icon/css.svg" alt="css-skil">
+								</div>
+								<div class="absolute__block block__html">
+									<img src="main/img/icon/html.svg" alt="html-skil">
+								</div>
+								<div class="absolute__block block__js">
+									<img src="main/img/icon/js.svg" alt="js-skil">
+								</div>
+								<div class="absolute__block block__php">
+									<img src="main/img/icon/php.svg" alt="php-skil">
+								</div>
+								<div class="absolute__block block__seo">
+									<img src="main/img/icon/seo.svg" alt="seo-skil">
+								</div>
+								<div class="big__main-photo">
+									<img src="main/img/photo/mainphoto.png" alt="logo">
+								</div>
+								<div class="big__main-text">
+									<h2 class="main__text-title">Коробко Павел</h2>
+									<h1 class="main__text-description">Разработка сайтов / Вёрстка / Дизайн</h1>
+								</div>
+								<div class="big__main-flex">
+									<a href="https://t.me/Pavelkorobko" class="main__flex-block">
+										<div class="flex__block-img">
+											<svg>
+												<use xlink:href="main/sprite/icon.svg#telegram"></use>
+											</svg>
+										</div>
+										<p class="flex__block-title">Я в Telegram</p>
+									</a>
+									<a href="https://www.instagram.com/korobko433" class="main__flex-block">
+										<div class="flex__block-img">
+											<svg>
+												<use xlink:href="main/sprite/icon.svg#instagram"></use>
+											</svg>
+										</div>
+										<p class="flex__block-title">Я в Instgram</p>
+									</a>
+									<a href="https://vk.com/korobkopavel" class="main__flex-block">
+										<div class="flex__block-img">
+											<svg>
+												<use xlink:href="main/sprite/icon.svg#vk"></use>
+											</svg>
+										</div>
+										<p class="flex__block-title">Я в VK</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<a class="index__grid-block" href="about.html">
+							<h3 class="index__grid-title">Обо мне</h3>
+							<div class="about__photo">
+								<img src="main/img/photo/about.svg" alt="logo">
+							</div>
+						</a>
+						<a class="index__grid-block" href="portfolio.html">
+							<h3 class="index__grid-title">Портфолио</h3>
+							<div class="about__photo">
+								<img src="main/img/photo/portfolio.svg" alt="logo">
+							</div>
+						</a>
+						<div class="index__grid-block">
+							<div class="circle__absolute circle__red"></div>
+							<h3 class="index__title">Основные услуги</h3>
+							<div class="index__text">
+								<ul class="index__list">
+									<li class="list__title">Вёрстка макетов любой сложности</li>
+									<li class="list__title">Создание сайтов с нуля
+										<ul>
+											<li class="list__text">Landing page</li>
+											<li class="list__text">Сайт визитка</li>
+											<li class="list__text">Многостраничный сайт</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<a href="info.html" class="button__list button__red">Перейти</a>
+						</div>
+						<div class="index__grid-block">
+							<div class="circle__absolute circle__green"></div>
+							<h3 class="index__title">Дополнительные услуги</h3>
+							<div class="index__text">
+								<ul class="index__list">
+									<li class="list__title">Front-end разработка</li>
+									<li class="list__title">Design сайтов, логотипов, иконок</li>
+									<li class="list__title">Seo продвижение</li>
+								</ul>
+							</div>
+							<a href="info.html" class="button__list button__green">Перейти</a>
+						</div>
+						<a class="index__grid-block" href="info.html">
+							<h3 class="index__grid-title">Информация</h3>
+							<div class="about__photo">
+								<img src="main/img/photo/information.svg" alt="logo">
+							</div>
+						</a>
+					</div>
+				</div>
+			</main>
+		</div>
+		<footer class="footer"></footer>
+	</div>
+	<script>
+		var acc = document.getElementsByClassName("accordion__btn");
+		var i;
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var accordion__menu = this.previousElementSibling;
+				if (accordion__menu.style.maxWidth) {
+					accordion__menu.style.maxWidth = null;
+				} else {
+					accordion__menu.style.maxWidth = accordion__menu.scrollWidth + "px";
+				}
+			});
+		}
+	</script>
+
+</body>
+
+</html>

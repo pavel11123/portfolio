@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main/css/style.css?v=19">
+	<link rel="stylesheet" type="text/css" href="main/css/feedback.css?v=19">
+	<link rel="stylesheet" type="text/css" href="main/css/null.css?v=19">
+	<link type="image/x-icon" href="main/img/icon/favicon.ico" rel="shortcut icon">
+	<script src="main/js/script.js?v=19" defer></script>
+	<script src="main/js/app.js?v=19" defer></script>
+	<script src="main/js/popupForm.js?v=19" defer></script>
+	<title>Свяжитесь со мной | Коробко Павел</title>
+</head>
+
+<body id="phone__menu-id-body">
+
+	<div class="wrapper">
+		<div class="grid__areas">
+			<aside class="sidebar">
+				<div class="sidebar__menu">
+					<div class="sidebar__menu-top">
+						<div class="accordion__menu">
+							<h2 class="sidebar__menu-title">Меню</h2>
+							<nav class="sidebar__list">
+								<ul class="sidebar__menu-ul">
+									<li class="sidebar__menu-li"><a href="index.html"
+											class="sidebar__menu-a icon__dashboard">Главная</a></li>
+									<li class="sidebar__menu-li"><a href="about.html" class="sidebar__menu-a icon__about">Обо
+											мне</a></li>
+									<li class="sidebar__menu-li"><a href="portfolio.html"
+											class="sidebar__menu-a icon__portfolio">Портфолио</a></li>
+									<li class="sidebar__menu-li"><a href="info.html" class="sidebar__menu-a icon__info">Инфо</a>
+									</li>
+									<li class="sidebar__menu-li"><a href="feedback.html"
+											class="sidebar__menu-a icon__order">Заказать</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="accordion__btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</aside>
+
+			<main class="main">
+
+				<div class="phone__main">
+					<div class="phone__menu">
+						<nav class="phone__list">
+							<div class="phone__block">
+								<a href="index.html">
+									<div class="phone__icon">
+										<img src="main/img/icon/home.svg" alt="dashboard">
+									</div>
+								</a>
+							</div>
+							<div class="phone__block">
+								<a href="about.html">
+									<div class="phone__icon">
+										<img src="main/img/icon/user.svg" alt="dashboard">
+									</div>
+								</a>
+							</div>
+							<div class="phone__block">
+								<a href="portfolio.html">
+									<div class="phone__icon">
+										<img src="main/img/icon/pc.svg" alt="dashboard">
+									</div>
+								</a>
+							</div>
+							<div class="phone__block">
+								<a href="info.html">
+									<div class="phone__icon">
+										<img src="main/img/icon/graphic.svg" alt="dashboard">
+									</div>
+								</a>
+							</div>
+							<div class="phone__block icon__page">
+								<a href="feedback.html">
+									<div class="phone__icon">
+										<img src="main/img/icon/order.svg" alt="dashboard">
+									</div>
+								</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<header class="header">
+					<div class="header__flex">
+						<div class="header__logo">
+							<img src="main/img/icon/logo.svg" alt="logo">
+						</div>
+						<a href="index.html">
+							<div class="header__society">
+								<h2 class="profile__name">Korobko Pavel</h2>
+								<div class="header__profile-photo">
+									<img src="main/img/photo/profile.jpeg" alt="logo">
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="header__bottom">
+						<span class="header__nav"><a href="index.html" class="nav__index">Главная</a><a href="feedback.html"
+								class="nav__page">Заказать</a></span>
+						<div class="popup__main">
+							<button onclick="popup__open()" class="popup__btn">Заказать</button>
+							<div id="popup-id" class="popup">
+								<div class="popup__card">
+									<div onclick="popup__close()" class="popup__card-close"></div>
+									<div class="popup__content">
+										<form action="send_mail.php" name="Popupform" method="POST" class="form__popup">
+											<div class="popup__grid">
+												<input type="text" name="name" id="name" data-reg="^[А-ЯЁ][а-яё]*$"
+													placeholder="Имя" class="popup__login popup__input">
+												<input type="email" name="email" id="email"
+													data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" placeholder="Email*"
+													class="popup__email popup__input" required="">
+												<input type="text" name="phone" id="phone" data-reg="^((\+7|7|8)+([0-9]){10})$"
+													placeholder="Номер телефона" class="popup__subject popup__input">
+												<textarea name="message" placeholder="Сообщение*"
+													class="popup__message popup__input" required=""></textarea>
+												<input type="submit" id="Popupbutton" value="Отправить"
+													class="popup__submit popup__input">
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<div class="content">
+					<div class="feedback__info">
+						<section class="feedback__section">
+							<h1 class="feedback__title">Остались вопросы?</h1>
+							<p class="feedback__subtitle">Контактная информация</p>
+						</section>
+
+						<div class="feedback__grid-info">
+							<div class="feedback__contact-grid">
+								<a href="tel:+79507822966" class="feedback__contact">
+									<div class="feedback__society">
+										<svg>
+											<use xlink:href="main/sprite/icon.svg#phone"></use>
+										</svg>
+									</div>
+									<h3 class="feedback__society-title">Позвоните мне</h3>
+									<p class="feedback__society-text">+7-950-782-29-66</p>
+								</a>
+								<div class="feedback__contact">
+									<div class="feedback__society">
+										<svg>
+											<use xlink:href="main/sprite/icon.svg#location"></use>
+										</svg>
+									</div>
+									<h3 class="feedback__society-title">Офис</h3>
+									<p class="feedback__society-text">24 северная 161</p>
+								</div>
+							</div>
+
+							<div class="feedback__contact-grid">
+								<a href="mailto:korobko.11@inbox.ru" class="feedback__contact">
+									<div class="feedback__society">
+										<svg>
+											<use xlink:href="main/sprite/icon.svg#email"></use>
+										</svg>
+									</div>
+									<h3 class="feedback__society-title">Email</h3>
+									<p class="feedback__society-text">korobko.11@inbox.ru</p>
+								</a>
+								<a href="https://korobko.site" class="feedback__contact">
+									<div class="feedback__society">
+										<svg>
+											<use xlink:href="main/sprite/icon.svg#site"></use>
+										</svg>
+									</div>
+									<h3 class="feedback__society-title">Website</h3>
+									<p class="feedback__society-text">korobko.site</p>
+								</a>
+							</div>
+
+							<div class="feedback__contact-grid">
+								<a href="https://t.me/Pavelkorobko" class="feedback__contact">
+									<div class="feedback__society">
+										<svg>
+											<use xlink:href="main/sprite/icon.svg#telegram"></use>
+										</svg>
+									</div>
+									<h3 class="feedback__society-title">Telegram</h3>
+									<p class="feedback__society-text">@Pavelkorobko</p>
+								</a>
+								<a href="https://www.instagram.com/korobko433" class="feedback__contact">
+									<div class="feedback__society">
+										<svg>
+											<use xlink:href="main/sprite/icon.svg#instagram"></use>
+										</svg>
+									</div>
+									<h3 class="feedback__society-title">Instagram</h3>
+									<p class="feedback__society-text">korobko433</p>
+								</a>
+							</div>
+
+							<div class="feedback__contact-grid">
+								<a href="https://wa.me/79507822966?text=Здравствуйте!%20мне%20нужен%20сайт!"
+									class="feedback__contact">
+									<div class="feedback__society">
+										<svg>
+											<use xlink:href="main/sprite/icon.svg#wsa"></use>
+										</svg>
+									</div>
+									<h3 class="feedback__society-title">Whats App</h3>
+									<p class="feedback__society-text">Коробко Павел</p>
+								</a>
+								<a href="https://vk.com/korobkopavel" class="feedback__contact">
+									<div class="feedback__society">
+										<svg>
+											<use xlink:href="main/sprite/icon.svg#vk"></use>
+										</svg>
+									</div>
+									<h3 class="feedback__society-title">VK</h3>
+									<p class="feedback__society-text">Коробко Павел</p>
+								</a>
+							</div>
+						</div>
+
+						<div class="feedback__form">
+							<h2 class="form__title">Свяжитесь со мной!</h2>
+							<p class="form__subtitle">Какой-то текст</p>
+
+							<form action="send_mail.php" name="form" method="POST" class="form__main">
+								<div class="form__grid">
+									<input type="text" name="name" id="name" data-reg="^[А-ЯЁ][а-яё]*$" placeholder="Имя"
+										class="feedback__login form__input">
+									<input type="email" name="email" id="email"
+										data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" placeholder="Email*"
+										class="feedback__email form__input" required="">
+									<input type="text" name="phone" id="phone" data-reg="^((\+7|7|8)+([0-9]){10})$"
+										placeholder="Номер телефона" class="feedback__subject form__input">
+									<textarea name="message" placeholder="Сообщение*" class="feedback_message form__input"
+										required=""></textarea>
+									<input type="submit" id="button" value="Отправить" class="feedback__submit form__input">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<footer class="footer"></footer>
+	</div>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion__btn");
+		var i;
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var accordion__menu = this.previousElementSibling;
+				if (accordion__menu.style.maxWidth) {
+					accordion__menu.style.maxWidth = null;
+				} else {
+					accordion__menu.style.maxWidth = accordion__menu.scrollWidth + "px";
+				}
+			});
+		}
+	</script>
+
+</body>
+
+</html>

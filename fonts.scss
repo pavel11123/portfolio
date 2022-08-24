@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Funnier";
+  src: url("./public/fonts/Funnier.woff2") format("woff2"),
+    url("./public/fonts/Funnier.woff") format("woff"),
+    url("./public/fonts/Funnier.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Palatino";
+  src: url("./public/fonts/Palatino.woff2") format("woff2"),
+    url("./public/fonts/Palatino.woff") format("woff"),
+    url("./public/fonts/Palatino.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Palatino";
+  src: url("./public/fonts/PalatinoBold.woff2") format("woff2"),
+    url("./public/fonts/PalatinoBold.woff") format("woff"),
+    url("./public/fonts/PalatinoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}

@@ -1,0 +1,51 @@
+@use "sass:math";
+
+@import "./mixins.scss";
+
+.footer {
+  background-color: #ffc234;
+
+  padding: rem(40) adaptiv-num-rem(15, 80, 1440, 1310);
+
+  @media (min-width: 1440px) {
+    padding: rem(40) rem(80);
+  }
+
+  @media (max-width: 1310px) {
+    padding: rem(40) rem(15);
+  }
+}
+
+.footer__info {
+  padding: rem(35) 0;
+
+  h6 {
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(20);
+    letter-spacing: 0.01em;
+  }
+}
+
+.footer__block-right {
+  max-width: rem(400);
+  margin-left: auto;
+}
+
+.footer__text {
+  span,
+  a {
+    font-weight: 400;
+    font-size: rem(14);
+    line-height: rem(20);
+    letter-spacing: 0.01em;
+  }
+}
+
+.footer__contact {
+  padding-bottom: rem(35);
+}
+
+.footer-gap {
+  gap: rem(15);
+}

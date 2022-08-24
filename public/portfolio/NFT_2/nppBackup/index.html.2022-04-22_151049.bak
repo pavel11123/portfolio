@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html><head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style>
+		*{
+		margin: 0;
+		padding: 0;
+		}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="main/css/style.css?2">
+	<title>NFT Store</title>
+</head>
+<body style="background: #171720;">
+	
+	<div class="wrapper">
+		
+		<header class="header">
+			<div class="container">
+				<div class="header_main">
+					
+					<div class="header__logo">
+						<div class="header__logo__img">
+							<img src="main/img/icon/logo.png">
+						</div>
+						<p class="__logo">NFT ART</p>
+					</div>
+					
+					<div class="header__search">
+						<input type="text" name="search" placeholder="Search to item here" class="__search">
+					</div>
+					
+					<nav class="header__menu">
+						<ul class="__menu__ul">
+							<li class="__menu__li"><a href="index.html" class="__menu__li__a menu__li__a">Explore</a></li>
+							<li class="__menu__li"><a href="#" class="__menu__li__a">My items</a></li>
+							<li class="__menu__li"><a href="#" class="__menu__li__a">Following</a></li>
+						</ul>
+					</nav>
+					
+					<div class="header__login">
+						<button class="__login__button button__create">Create</button>
+						<button class="__login__button">Connect</button>
+					</div>
+					
+				</div>
+			</div>
+		</header>
+		
+		<main class="main">
+			<div class="container">
+				
+				<section class="section__start">
+					<div class="section__start__flex">
+						<h1 class="section__start__title">Discover, collect, and sell extraordinary NFTs</h1>
+						<p class="section__start__text">Explore the upcoming NFT projects, get all the info you need to help you decide if that is the right project for you. Don't forget to check the additional info in the project page, including relevant tips per project.</p>
+						<div class="start__button">
+							<button class="__login__button button__create">Explore</button>
+							<button class="__login__button">Create</button>
+						</div>
+						<div class="section__start__learn">
+							<div class="section__start__img">
+								<img src="main/img/icon/group54.png">
+							</div>
+							<p class="section__learn__text">Learn more about NFT ART</p>
+						</div>
+					</div>
+					
+					<div class="section__start__flex">
+						<div class="section__start__flex_2">
+							
+							<div class="start__background">
+								<img src="main/img/photo/ornaments.png">
+							</div>
+							
+							<div class="start__photo_1">
+								<img src="main/img/photo/artboard–54.png">
+							</div>
+							<div class="start__photo_2">
+								<img src="main/img/photo/artboard–55.png">
+								
+							</div>
+						</div>
+						
+						
+					</div>
+				</section>
+				
+				<section  class="sellers__section">
+					
+					<h2 class="sellers__section__title">Top Sellers</h2>
+					<p class="sellers__section__text">The leading top-selling NFT artist in the top 5 list this year.: <br>Examining Some of the Most Popular NFT projects.</p>
+					
+					<div class="sellers__section__people">
+						
+						<div class="sellers__people__block">
+							
+							<div class="sellers__people__number">01</div>
+							
+							<div class="sellers__people__block__img">
+								<img src="main/img/photo/rectangle25.png">
+							</div>
+							
+							<p class="sellers__people__block__name">Brian Domanic</p>
+							<p class="sellers__people__block__eth">21.05 ETH</p>
+							
+						</div>
+						
+						<div class="sellers__people__block">
+							
+							<div class="sellers__people__number">02</div>
+							
+							<div class="sellers__people__block__img">
+								<img src="main/img/photo/rectangle26.png">
+							</div>
+							
+							<p class="sellers__people__block__name">Brian Domanic</p>
+							<p class="sellers__people__block__eth">21.05 ETH</p>
+							
+						</div>
+						
+						<div class="sellers__people__block">
+							
+							<div class="sellers__people__number">03</div>
+							
+							<div class="sellers__people__block__img">
+								<img src="main/img/photo/rectangle27.png">
+							</div>
+							
+							<p class="sellers__people__block__name">Brian Domanic</p>
+							<p class="sellers__people__block__eth">21.05 ETH</p>
+							
+						</div>
+						
+						<div class="sellers__people__block">
+							
+							<div class="sellers__people__number">04</div>
+							
+							<div class="sellers__people__block__img">
+								<img src="main/img/photo/rectangle28.png">
+							</div>
+							
+							<p class="sellers__people__block__name">Brian Domanic</p>
+							<p class="sellers__people__block__eth">21.05 ETH</p>
+							
+						</div>
+						
+						<div class="sellers__people__block">
+							
+							<div class="sellers__people__number">05</div>
+							
+							<div class="sellers__people__block__img">
+								<img src="main/img/photo/rectangle29.png">
+							</div>
+							
+							<p class="sellers__people__block__name">Brian Domanic</p>
+							<p class="sellers__people__block__eth">21.05 ETH</p>
+							
+						</div>
+						
+					</div>
+				</section>
+				
+				<section class="bids__section">
+					
+					<h2 class="bids__section__title">Hot Bids</h2>
+					<p class="bids__section__text">Non-Fungible Tokens (NFTs) are virtual tokens minted on the blockchain <br>for digital scarcity security and authenticity.</p>
+					
+					<div class="bids__section__nft">
+						
+						<input type="checkbox" id="nft__checkbox">
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/bernardo.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle25.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle26.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle27.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/cash.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle28.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle29.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle25.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/erick.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle26.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle27.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle28.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/lee.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle29.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle25.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle26.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/lekoarts.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle27.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle28.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle29.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/luke.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle25.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle26.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle27.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/simon.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle28.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle29.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle25.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/warren.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle26.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle27.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle28.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/bernardo.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle25.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle26.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle27.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/cash.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle28.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle29.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle25.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/erick.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle26.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle27.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle28.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/lee.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle29.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle25.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle26.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/lekoarts.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle27.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle28.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle29.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/luke.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle25.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle26.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle27.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/simon.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle28.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle29.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle25.png">
+								</div>
+							</div>
+						</div>
+						
+						<div class="bids__nft__block">
+							<div class="bids__nft__block__img">
+								<img src="main/img/photo/warren.png">
+							</div>
+							<div class="bids__block__flex">
+								<p class="bids__block__text">David Art<br><span class="bids__block__text_span">1.25 ETH</span></p>
+								<div class="bids__block__photo">
+									<img src="main/img/photo/rectangle26.png">
+								</div>
+								<div class="bids__block__photo_1">
+									<img src="main/img/photo/rectangle27.png">
+								</div>
+								<div class="bids__block__photo_2">
+									<img src="main/img/photo/rectangle28.png">
+								</div>
+							</div>
+						</div>
+						
+						<label class="bids__btn" for="nft__checkbox">
+							<button class="bids__button bids__more">Load More</button>
+							<button class="bids__button bids__less">Load Less</button>
+						</label>
+						
+					</div>
+					
+				</section>
+				
+			</div>
+		</main>
+		
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__main">
+					
+					<div class="footer__block__logo">
+						
+						<div class="footer__logo">
+							<div class="footer__block__logo_img">
+								<img src="main/img/icon/logo.png">
+							</div>
+							<p class="__logo">NFT ART</p>
+						</div>
+						
+						<p class="footer__logo__text">Get tye lastes Updates</p>
+						
+						<form action="send.php" method="post" class="form__main">
+							<input type="text" name="user_name" placeholder="Your Email*" class="feedback__login" required="">
+							<input type="submit" value="Email Me!" class="feedback__submit">
+						</form>
+						
+					</div>
+					
+					<div class="footer__block">
+						<ul class="footer__block_ul">
+							<li class="footer__block_li">NFT ART</li>
+							<li class="footer__block_li">Explore</li>
+							<li class="footer__block_li">How it works</li>
+							<li class="footer__block_li">Contact Us</li>
+						</ul>
+					</div>
+					
+					<div class="footer__block">
+						<ul class="footer__block_ul">
+							<li class="footer__block_li">My Account</li>
+							<li class="footer__block_li">Profile</li>
+							<li class="footer__block_li">Favorites</li>
+							<li class="footer__block_li">My Collections</li>
+							<li class="footer__block_li">Settings</li>
+						</ul></div>
+						
+						<div class="footer__block">
+							<ul class="footer__block_ul">
+								<li class="footer__block_li">Support</li>
+								<li class="footer__block_li">Terms of service</li>
+								<li class="footer__block_li">Legal</li>
+								<li class="footer__block_li">Privacy policy</li>
+							</ul></div>
+							
+				</div>
+				
+				<div class="footer__bottom">
+					<p class="footer__bottom__text">NFT ART, Inc. All Rights Reserved</p>
+					<div class="footer__social">
+						<div class="footer__social__img">
+							<img src="main/img/icon/instagram.png">
+						</div>
+						<div class="footer__social__img">
+							<img src="main/img/icon/twitter.png">
+						</div>
+						<div class="footer__social__img">
+							<img src="main/img/icon/Vector.png">
+						</div>
+						<div class="footer__social__img">
+							<img src="main/img/icon/discord.png">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</footer>
+		
+	</div>
+	
+	<script type="text/javascript" src="main/js/script.js"></script>
+	
+</body>
+</html>

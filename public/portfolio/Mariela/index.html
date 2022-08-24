@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="main/css/style.css">
+  <link rel="stylesheet" type="text/css" href="main/css/null.css">
+  <title>Title</title>
+</head>
+
+<body style="background: #fff;">
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__main">
+
+          <div class="logo__main">
+            <img src="main/img/icon/logo.png" alt="logo">
+          </div>
+
+          <nav class="header__menu">
+            <ul class="header__menu-ul">
+              <li class="header__menu-li"><a href="index.html" class="menu__a">Home</a></li>
+              <li class="header__menu-li"><a href="index.html" class="menu__a">About me</a></li>
+              <li class="header__menu-li"><a href="index.html" class="menu__a">Products</a></li>
+              <li class="header__menu-li"><a href="index.html" class="menu__a">Contact me</a></li>
+            </ul>
+
+            <div class="header__cart">
+              <img src="main/img/icon/cart.png" alt="cart">
+            </div>
+
+          </nav>
+
+          <div class="phone__menu">
+            <div onclick="menu__open()" class="phone__open">
+              <svg viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.9583 26.25H29.1666M5.83325 8.75H29.1666H5.83325ZM5.83325 17.5H29.1666H5.83325Z"
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <nav id="phone__menu-id" class="phone__menu-nav">
+              <div onclick="menu__close()" class="phone__close">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" fill="#000000">
+                  <path d="M0 0h24v24H0V0z" fill="none" />
+                  <path
+                    d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                </svg>
+              </div>
+              <ul class="phone__menu-ul">
+                <li class="phone__menu-li"><a href="index.html" class="phone__menu-a">Home</a></li>
+                <li class="phone__menu-li"><a href="index.html" class="phone__menu-a">About me</a></li>
+                <li class="phone__menu-li"><a href="index.html" class="phone__menu-a">Products</a></li>
+                <li class="phone__menu-li"><a href="index.html" class="phone__menu-a">Contact me</a></li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <div class="primary">
+
+        <div class="primary__backround-1"></div>
+        <div class="primary__backround-2"></div>
+
+        <div class="container">
+
+          <div class="primary__main">
+
+            <div class="primary__main-block">
+              <div class="primary__main-img">
+                <img src="main/img/photo/primary.png" alt="primary">
+              </div>
+            </div>
+
+            <div class="primary__cushion">
+              <p class="cushion__text-new">new</p>
+              <p class="cushion__text-main">Spring Cushion<br>Collection 2019</p>
+              <div class="cushion-buy">
+                <p class="cushion__text-buy">buy now</p>
+              </div>
+            </div>
+
+            <div class="primary__rectangle">
+              <div class="primary__rectangle-1"></div>
+              <div class="primary__rectangle-2"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="info">
+        <div class="container">
+          <div class="info__main">
+            <section class="info__section">
+              <h2 class="info__title">I'm a cushion designer</h2>
+              <p class="info__text">Based in San Francisco, California I design trendy and fashion Cushions, since I
+                have memory I always had a tendency to design and illustration.</p>
+              <div class="info__button">
+                <a href="#" class="info__button-a">Learn more</a>
+              </div>
+            </section>
+
+            <div class="info__grid">
+              <div class="info__block">
+                <div class="info__block-img">
+                  <img src="main/img/photo/girl.png" alt="girl">
+                </div>
+                <div class="info__block-text">
+                  <a href="#" class="info__block-text-a">About me</a>
+                  <a href="#" class="info__block-text-btn">Learn More</a>
+                </div>
+              </div>
+              <div class="info__block">
+                <div class="info__block-img">
+                  <img src="main/img/photo/primary.png" alt="girl">
+                </div>
+                <div class="info__block-text">
+                  <a href="#" class="info__block-text-a">My products</a>
+                  <a href="#" class="info__block-text-btn">Learn More</a>
+                </div>
+              </div>
+              <div class="info__block">
+                <div class="info__block-img">
+                  <img src="main/img/photo/keyboard.png" alt="girl">
+                </div>
+                <div class="info__block-text">
+                  <a href="#" class="info__block-text-a">Contact me</a>
+                  <a href="#" class="info__block-text-btn">Learn More</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="about__main">
+        <div class="container">
+          <div class="about">
+            <div class="about__rectangle">
+              <p class="about__text-new">About me</p>
+              <p class="about__text-main">I'm a trendy<br>Cushion Designer</p>
+              <div class="about__buy">
+                <p class="about__text-buy">learn more</p>
+              </div>
+            </div>
+            <div class="about__photo">
+              <img src="main/img/photo/girl.png" alt="girl">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__main">
+        <div class="container">
+          <div class="card">
+            <div class="card__grid">
+              <div class="card__text">
+                <h3 class="card__title">beginnings</h3>
+                <p class="card__text-p">Credibly innovate granular internal or organic sources whereas high standards in
+                  web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful
+                  experiences.<br><br>Dramatically synthesize integrated schemas. with optimal networks.</p>
+              </div>
+              <div class="card__photo">
+                <img src="main/img/photo/sofa.png" alt="sofa">
+              </div>
+            </div>
+            <hr class="card__line">
+            <div class="card__grid">
+              <div class="card__text card__text-order">
+                <h3 class="card__title">beginnings</h3>
+                <p class="card__text-p">Credibly innovate granular internal or organic sources whereas high standards in
+                  web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful
+                  experiences.<br><br>Dramatically synthesize integrated schemas. with optimal networks.</p>
+                <div class="card__text-btn">
+                  <a href="#" class="card__btn-a">Learn more</a>
+                </div>
+              </div>
+              <div class="card__photo">
+                <img src="main/img/photo/street-sofa.png" alt="sofa">
+              </div>
+            </div>
+            <hr class="card__line">
+            <div class="card__grid">
+              <div class="card__text">
+                <h3 class="card__title">beginnings</h3>
+                <p class="card__text-p">Credibly innovate granular internal or organic sources whereas high standards in
+                  web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful
+                  experiences.<br><br>Dramatically synthesize integrated schemas. with optimal networks.</p>
+              </div>
+              <div class="card__photo">
+                <img src="main/img/photo/sofa.png" alt="sofa">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collection__main">
+        <div class="container">
+          <div class="collection">
+            <div class="collection__photo">
+              <img src="main/img/photo/primary.png" alt="girl">
+            </div>
+            <div class="collection__rectangle">
+              <p class="collection__text-new">About me</p>
+              <p class="collection__text-main">I'm a trendy<br>Cushion Designer</p>
+              <div class="collection__buy">
+                <p class="collection__text-buy">learn more</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="products__main">
+        <div class="container">
+          <div class="products">
+            <div class="products__grid">
+              <div class="products__block">
+                <div class="products__block-img">
+                  <img src="main/img/photo/silver.png" alt="silver">
+                </div>
+                <div class="products__text">
+                  <h3 class="products__text-title">Plated Cushion</h3>
+                  <p class="products__text-price">$ 19.99 USD</p>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__block-img">
+                  <img src="main/img/photo/black.png" alt="silver">
+                </div>
+                <div class="products__text">
+                  <h3 class="products__text-title">Plated Cushion</h3>
+                  <p class="products__text-price">$ 19.99 USD</p>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__block-img">
+                  <img src="main/img/photo/blue.png" alt="silver">
+                </div>
+                <div class="products__text">
+                  <h3 class="products__text-title">Plated Cushion</h3>
+                  <p class="products__text-price">$ 19.99 USD</p>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__block-img">
+                  <img src="main/img/photo/pink.png" alt="silver">
+                </div>
+                <div class="products__text">
+                  <h3 class="products__text-title">Plated Cushion</h3>
+                  <p class="products__text-price">$ 19.99 USD</p>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__block-img">
+                  <img src="main/img/photo/plated.png" alt="silver">
+                </div>
+                <div class="products__text">
+                  <h3 class="products__text-title">Plated Cushion</h3>
+                  <p class="products__text-price">$ 19.99 USD</p>
+                </div>
+              </div>
+              <div class="products__block">
+                <div class="products__block-img">
+                  <img src="main/img/photo/green.png" alt="silver">
+                </div>
+                <div class="products__text">
+                  <h3 class="products__text-title">Plated Cushion</h3>
+                  <p class="products__text-price">$ 19.99 USD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback__main">
+        <div class="container">
+          <div class="feedback">
+            <div class="feedback__info">
+              <div class="feedback__info-block">
+                <h3 class="feedback__info-title">Email</h3>
+                <p class="feedback__info-text">support@website.com</p>
+              </div>
+              <div class="feedback__info-block">
+                <h3 class="feedback__info-title">phone</h3>
+                <p class="feedback__info-text">800-123-456</p>
+              </div>
+              <div class="feedback__info-block">
+                <h3 class="feedback__info-title">address</h3>
+                <p class="feedback__info-text">23 Evergreen Street,<br>San Francisco, California<br>USA</p>
+              </div>
+            </div>
+            <div class="feedback__form">
+              <div class="feedback__form-block-text">
+                <h3 class="feedback__form-title">Address</h3>
+                <p class="feedback__form-text">Drop us your message and I'll get back to you as soon as possible.</p>
+              </div>
+              <form action="send.php" method="post" class="form__main">
+                <div class="form__input">
+                  <div class="form__input-ncpl">
+                    <input type="text" name="user_name" placeholder="Your name" class="feedback__name feedback__inpt"
+                      required="">
+                    <input type="text" name="user_name" placeholder="Your company"
+                      class="feedback__company feedback__inpt" required="">
+                    <input type="text" name="user_name" placeholder="Your phone" class="feedback__phone feedback__inpt"
+                      required="">
+                    <input type="text" name="user_name" placeholder="Your login" class="feedback__login feedback__inpt"
+                      required="">
+                  </div>
+                  <textarea type="text" name="user_name" placeholder="Your message"
+                    class="feedback__message feedback__inpt" required=""></textarea>
+                  <input type="submit" value="Lets talk" class="feedback__submit feedback__inpt">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="subscribe__main">
+        <div class="container">
+          <div class="subscribe">
+            <section class="subscribe__section">
+              <h3 class="subscribe__title">NEWSLETTER</h3>
+              <p class="subscribe__text">Get promotions & updates!</p>
+            </section>
+            <form action="send.php" method="post" class="form__subscribe">
+              <div class="form__input-subscribe">
+                <input type="text" name="user_name" placeholder="Your name" class="subscribe__name subscribe__inpt"
+                  required="">
+                <input type="text" name="user_name" placeholder="Your email" class="subscribe__company subscribe__inpt"
+                  required="">
+                <input type="submit" value="Subscribe" class="subscribe__submit subscribe__inpt">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer class="footer">
+
+      <div class="footer__main">
+        <div class="footer__up">
+          <div class="container">
+            <div class="footer__up-flex">
+              <div class="footer__up-block">
+                <div class="footer__up-img">
+                  <img src="main/img/icon/shipping.svg" alt="ship">
+                </div>
+                <div class="footer__up-text">
+                  <p class="footer__up-title">Safe shopping</p>
+                  <p class="footer__up-description">Buy with confidence</p>
+                </div>
+              </div>
+              <div class="footer__up-block">
+                <div class="footer__up-img">
+                  <img src="main/img/icon/shopping.svg" alt="ship">
+                </div>
+                <div class="footer__up-text">
+                  <p class="footer__up-title">Safe shopping</p>
+                  <p class="footer__up-description">Buy with confidence</p>
+                </div>
+              </div>
+              <div class="footer__up-block">
+                <div class="footer__up-img">
+                  <img src="main/img/icon/guarantee.svg" alt="ship">
+                </div>
+                <div class="footer__up-text">
+                  <p class="footer__up-title">Safe shopping</p>
+                  <p class="footer__up-description">Buy with confidence</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__down">
+          <div class="container">
+            <div class="footer__down-flex">
+              <div class="footer__left">
+              <div class="footer__logo">
+                <img src="main/img/icon/logo_w.png" alt="logo">
+              </div>
+              <div class="footer__menu">
+                <nav class="footer__nav">
+                  <ul class="footer__menu-ul">
+                    <li class="footer__menu-li">Home</li>
+                    <li class="footer__menu-li">About me</li>
+                    <li class="footer__menu-li">Products</li>
+                    <li class="footer__menu-li">Contact me</li>
+                  </ul>
+                </nav>
+              </div>
+              </div>
+              <div class="footer__right">
+                <div class="footer__society">
+                  <img src="main/img/icon/facebook.svg" alt="facebook">
+                </div>
+              </div>
+            </div>
+            <div class="footer__down-info">
+              <ul class="footer__down-info-ul">
+                <li class="footer__down-info-li">Version 1.2</li>
+                <li class="footer__down-info-li">| Image</li>
+                <li class="footer__down-info-li">Licensing</li>
+                <li class="footer__down-info-li">| Made By</li>
+                <li class="footer__down-info-li">Pablo Ramos</li>
+                <li class="footer__down-info-li">| Visit My</li>
+                <li class="footer__down-info-li">Templates</li>
+                <li class="footer__down-info-li">| Powered By</li>
+                <li class="footer__down-info-li">Webflow</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="main/js/script.js"></script>
+
+</body>
+
+</html>
