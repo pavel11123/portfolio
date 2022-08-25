@@ -1,7 +1,7 @@
 import "./Homepage.scss";
 import { motion } from "framer-motion";
 
-import Form from "../components/Form";
+import ContactUs from "../components/ContactUs";
 
 const textAnimation = {
   hidden: {
@@ -569,7 +569,7 @@ const Homepage = () => {
                   custom={2}
                   className="contacts__form"
                 >
-                  <Form />
+                  <ContactUs />
                 </motion.div>
               </div>
             </motion.div>
