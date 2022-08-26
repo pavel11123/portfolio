@@ -104,8 +104,8 @@ const Homepage = () => {
               <motion.img
                 variants={bananaAnimation}
                 custom={1}
-                src="/img/photo/banana.png"
-                alt="Коробко веб студия - качественно, красиво, удобно, стильно"
+                src="/img/photo/banana.webp"
+                alt="Коробко веб студия - Хочешь банан? Или сайт?"
               />
             </div>
             <div className="title__start title__start-bottom d-fl-col">
@@ -138,13 +138,14 @@ const Homepage = () => {
         </div>
       </motion.section>
 
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ amount: 0.3, once: true }}
-        className="section__about section-wrap"
-      >
-        <article className="section__block block-left">
+      <section className="section__about section-wrap">
+        <a name="about"></a>
+        <motion.article
+          className="section__block block-left"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.3, once: true }}
+        >
           <div className="block-text">
             <motion.h2
               variants={blockAnimation}
@@ -170,21 +171,26 @@ const Homepage = () => {
               className="list__block list__block-yellow d-fl-col"
             >
               <motion.li variants={listAnimation} custom={1}>
-                качественная работа
+                <h3>качественная работа</h3>
               </motion.li>
               <motion.li variants={listAnimation} custom={2}>
-                соблюдение сроков
+                <h3>соблюдение сроков</h3>
               </motion.li>
               <motion.li variants={listAnimation} custom={3}>
-                индивидуальный подход
+                <h3>индивидуальный подход</h3>
               </motion.li>
               <motion.li variants={listAnimation} custom={4}>
-                непрерывная связь
+                <h3>непрерывная связь</h3>
               </motion.li>
             </motion.ul>
           </div>
-        </article>
-        <div className="section__block block-red d-fl">
+        </motion.article>
+        <motion.div
+          className="section__block block-red d-fl"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.3, once: true }}
+        >
           <motion.div
             variants={blockAnimation}
             custom={1}
@@ -192,29 +198,34 @@ const Homepage = () => {
           >
             <img
               src="/img/photo/nintendo.webp"
-              alt="Коробко студия - качественно, красиво, удобно, стильно"
+              alt="Nintendo - Коробко веб студия"
             />
           </motion.div>
-        </div>
-      </motion.section>
-
-      <motion.section
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ amount: 0.3, once: true }}
-        className="section__about section-wrap--reverse"
-      >
-        <div className="section__block block-yellow d-fl">
+        </motion.div>
+      </section>
+      <a name="work"></a>
+      <section className="section__about section-wrap--reverse">
+        <motion.div
+          className="section__block block-yellow d-fl"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.3, once: true }}
+        >
           <div className="block__img block__img-rubic">
             <motion.img
               variants={blockAnimation}
               custom={1}
               src="/img/photo/rubic.webp"
-              alt="Коробко студия - качественно, красиво, удобно, стильно"
+              alt="Rubic - Коробко веб студия"
             />
           </div>
-        </div>
-        <article className="section__block block-left">
+        </motion.div>
+        <motion.article
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.3, once: true }}
+          className="section__block block-left"
+        >
           <div className="block-text">
             <motion.h2
               variants={blockAnimation}
@@ -240,21 +251,21 @@ const Homepage = () => {
               className="list__block list__block-red d-fl-col"
             >
               <motion.li variants={listAnimationRight} custom={1}>
-                landing page
+                <h3>landing page</h3>
               </motion.li>
               <motion.li variants={listAnimationRight} custom={2}>
-                многостраничный сайт
+                <h3>многостраничный сайт</h3>
               </motion.li>
               <motion.li variants={listAnimationRight} custom={3}>
-                сайт-визитка
+                <h3>сайт-визитка</h3>
               </motion.li>
               <motion.li variants={listAnimationRight} custom={4}>
-                сайт-пригласительное
+                <h3>сайт-пригласительное</h3>
               </motion.li>
             </motion.ul>
           </div>
-        </article>
-      </motion.section>
+        </motion.article>
+      </section>
 
       <motion.section
         initial="hidden"
@@ -262,6 +273,7 @@ const Homepage = () => {
         viewport={{ amount: 0.2, once: true }}
         className="portfolio"
       >
+        <a name="portfolio"></a>
         <div className="container">
           <div className="portfolio-main">
             <motion.h2 variants={textAnimation} custom={1} className="title">
@@ -270,7 +282,7 @@ const Homepage = () => {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ amount: 0.3, once: true }}
+              viewport={{ amount: 0.2, once: true }}
               className="portfolio-grid"
             >
               <motion.a
@@ -283,16 +295,16 @@ const Homepage = () => {
                 <div className="portfolio__cart-main">
                   <div className="cart__img">
                     <img
-                      src="/img/photo/portfolio/headphones.png"
-                      alt="Коробко студия - качественно, красиво, удобно, стильно"
+                      src="/img/photo/portfolio/headphones.webp"
+                      alt="Landing page от Korobko Web-studio - изучение иностранных языков"
                     />
                   </div>
                 </div>
                 <div className="portfolio__cart-title">
-                  <h6>
+                  <h3>
                     Сайт изучения <br />
                     иностранных языков
-                  </h6>
+                  </h3>
                 </div>
               </motion.a>
               <motion.a
@@ -305,16 +317,16 @@ const Homepage = () => {
                 <div className="portfolio__cart-main">
                   <div className="cart__img">
                     <img
-                      src="/img/photo/portfolio/box.png"
-                      alt="Коробко студия - качественно, красиво, удобно, стильно"
+                      src="/img/photo/portfolio/box.webp"
+                      alt="Landing page от Korobko Web-studio - интернет магазин custom box"
                     />
                   </div>
                 </div>
                 <div className="portfolio__cart-title">
-                  <h6>
+                  <h3>
                     Интернет-магазин <br />
                     custom box
-                  </h6>
+                  </h3>
                 </div>
               </motion.a>
               <motion.a
@@ -327,16 +339,16 @@ const Homepage = () => {
                 <div className="portfolio__cart-main">
                   <div className="cart__img">
                     <img
-                      src="/img/photo/portfolio/car.png"
-                      alt="Коробко студия - качественно, красиво, удобно, стильно"
+                      src="/img/photo/portfolio/car.webp"
+                      alt="Landing page от Korobko Web-studio - сайт логистической компании"
                     />
                   </div>
                 </div>
                 <div className="portfolio__cart-title">
-                  <h6>
+                  <h3>
                     Сайт логистической <br />
                     компании
-                  </h6>
+                  </h3>
                 </div>
               </motion.a>
               <motion.a
@@ -349,15 +361,15 @@ const Homepage = () => {
                 <div className="portfolio__cart-main">
                   <div className="cart__img">
                     <img
-                      src="/img/photo/portfolio/coffee.png"
-                      alt="Коробко студия - качественно, красиво, удобно, стильно"
+                      src="/img/photo/portfolio/coffee.webp"
+                      alt="Landing page от Korobko Web-studio - адаптивный сайт для бизнеса"
                     />
                   </div>
                 </div>
                 <div className="portfolio__cart-title">
-                  <h6>
+                  <h3>
                     сайт для малого <br /> бизнеса
-                  </h6>
+                  </h3>
                 </div>
               </motion.a>
               <motion.a
@@ -370,38 +382,40 @@ const Homepage = () => {
                 <div className="portfolio__cart-main">
                   <div className="cart__img">
                     <img
-                      src="/img/photo/portfolio/minion.png"
-                      alt="Коробко студия - качественно, красиво, удобно, стильно"
+                      src="/img/photo/portfolio/minion.webp"
+                      alt="Landing page от Korobko Web-studio - адаптивный NFT Store"
                     />
                   </div>
                 </div>
                 <div className="portfolio__cart-title">
-                  <h6>
+                  <h3>
                     сайт для nft <br />
                     store
-                  </h6>
+                  </h3>
                 </div>
               </motion.a>
-              <motion.div
+              <motion.a
                 variants={cartAnimation}
                 custom={6}
                 className="portfolio__cart"
+                href="/img/photo/portfolio/animals-photo.png"
+                target={"_blank"}
               >
                 <div className="portfolio__cart-main">
                   <div className="cart__img">
                     <img
-                      src="/img/photo/portfolio/cat.png"
-                      alt="Коробко студия - качественно, красиво, удобно, стильно"
+                      src="/img/photo/portfolio/cat.webp"
+                      alt="Landing page от Korobko Web-studio - Дизайн сайта для приюта домашних животных"
                     />
                   </div>
                 </div>
                 <div className="portfolio__cart-title">
-                  <h6>
+                  <h3>
                     дизайн приюта <br />
                     домашних животных
-                  </h6>
+                  </h3>
                 </div>
-              </motion.div>
+              </motion.a>
               <motion.a
                 variants={cartAnimation}
                 custom={7}
@@ -412,38 +426,40 @@ const Homepage = () => {
                 <div className="portfolio__cart-main">
                   <div className="cart__img">
                     <img
-                      src="/img/photo/portfolio/oil.png"
+                      src="/img/photo/portfolio/oil.webp"
                       alt="Коробко студия - качественно, красиво, удобно, стильно"
                     />
                   </div>
                 </div>
                 <div className="portfolio__cart-title">
-                  <h6>
+                  <h3>
                     сайт покупки и <br />
                     утилизации масла
-                  </h6>
+                  </h3>
                 </div>
               </motion.a>
-              <motion.div
+              <motion.a
                 variants={cartAnimation}
                 custom={8}
                 className="portfolio__cart"
+                href="/img/photo/portfolio/nike-photo.png"
+                target={"_blank"}
               >
                 <div className="portfolio__cart-main">
                   <div className="cart__img">
                     <img
-                      src="/img/photo/portfolio/nike.png"
-                      alt="Коробко студия - качественно, красиво, удобно, стильно"
+                      src="/img/photo/portfolio/nike.webp"
+                      alt="Landing page от Korobko Web-studio - Презентация новых кроссовок Nike"
                     />
                   </div>
                 </div>
                 <div className="portfolio__cart-title">
-                  <h6>
+                  <h3>
                     дизайн модели <br />
                     кроссовок nike
-                  </h6>
+                  </h3>
                 </div>
-              </motion.div>
+              </motion.a>
               <motion.a
                 variants={cartAnimation}
                 custom={9}
@@ -454,16 +470,16 @@ const Homepage = () => {
                 <div className="portfolio__cart-main">
                   <div className="cart__img">
                     <img
-                      src="/img/photo/portfolio/cake.png"
-                      alt="Коробко студия - качественно, красиво, удобно, стильно"
+                      src="/img/photo/portfolio/cake.webp"
+                      alt="Landing page от Korobko Web-studio - Сайт для кондитерской на дому"
                     />
                   </div>
                 </div>
                 <div className="portfolio__cart-title">
-                  <h6>
+                  <h3>
                     сайт домашней <br />
                     выпечки
-                  </h6>
+                  </h3>
                 </div>
               </motion.a>
               <motion.a
@@ -476,16 +492,16 @@ const Homepage = () => {
                 <div className="portfolio__cart-main">
                   <div className="cart__img">
                     <img
-                      src="/img/photo/portfolio/pillow.png"
-                      alt="Коробко студия - качественно, красиво, удобно, стильно"
+                      src="/img/photo/portfolio/pillow.webp"
+                      alt="Landing page от Korobko Web-studio - Интернет магазин подушек"
                     />
                   </div>
                 </div>
                 <div className="portfolio__cart-title">
-                  <h6>
+                  <h3>
                     интернет-магазин <br />
                     подушек
-                  </h6>
+                  </h3>
                 </div>
               </motion.a>
               <motion.a
@@ -498,16 +514,16 @@ const Homepage = () => {
                 <div className="portfolio__cart-main">
                   <div className="cart__img">
                     <img
-                      src="/img/photo/portfolio/film.png"
-                      alt="Коробко студия - качественно, красиво, удобно, стильно"
+                      src="/img/photo/portfolio/film.webp"
+                      alt="Landing page от Korobko Web-studio - Промо сайт к выходу нового фильма"
                     />
                   </div>
                 </div>
                 <div className="portfolio__cart-title">
-                  <h6>
+                  <h3>
                     Сайт промо к <br />
                     кинофильму
-                  </h6>
+                  </h3>
                 </div>
               </motion.a>
               <motion.a
@@ -520,16 +536,16 @@ const Homepage = () => {
                 <div className="portfolio__cart-main">
                   <div className="cart__img">
                     <img
-                      src="/img/photo/portfolio/space.png"
-                      alt="Коробко студия - качественно, красиво, удобно, стильно"
+                      src="/img/photo/portfolio/space.webp"
+                      alt="Landing page от Korobko Web-studio - Сайт для туристического агенства"
                     />
                   </div>
                 </div>
                 <div className="portfolio__cart-title">
-                  <h6>
+                  <h3>
                     сайт агенства <br />
                     travel space
-                  </h6>
+                  </h3>
                 </div>
               </motion.a>
             </motion.div>
@@ -543,6 +559,7 @@ const Homepage = () => {
         viewport={{ amount: 0.3, once: true }}
         className="section__contacts"
       >
+        <a name="contacts"></a>
         <div className="contacts-main">
           <motion.h2 variants={textAnimation} custom={1} className="title">
             контакты
@@ -576,7 +593,7 @@ const Homepage = () => {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ amount: 0.2, once: true }}
+              viewport={{ amount: 0.3, once: true }}
               className="section__block section__block-right block-red d-fl"
             >
               <div className="block__img block__img-contacts">
@@ -584,7 +601,7 @@ const Homepage = () => {
                   variants={blockAnimation}
                   custom={1}
                   src="/img/photo/phone.webp"
-                  alt="Коробко студия - качественно, красиво, удобно, стильно"
+                  alt="Phone - Коробко веб студия"
                 />
               </div>
             </motion.div>

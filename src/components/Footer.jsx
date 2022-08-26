@@ -10,8 +10,9 @@ function Footer() {
             <Logo />
 
             <div className="footer__info d-fl-col">
-              <h6>Web студия. Создание сайтов.</h6>
-              <h6>Продвижение сайтов. Дизайн сайтов.</h6>
+              <h1>Профессиональная разработка сайтов.</h1>
+              <h5>Web студия. Создание сайтов.</h5>
+              <h5>Продвижение сайтов. Дизайн сайтов.</h5>
             </div>
           </div>
         </div>
@@ -21,23 +22,33 @@ function Footer() {
               <span>Связаться</span>
               <div className="d-fl-wrap footer-gap">
                 <div className="d-fl-col footer__text">
-                  <a href="">+7 (983) 520-03-64</a>
-                  <a href="">+7 (950) 782-29-66</a>
+                  <a href="tel:+79835200346">+7 (983) 520-03-46</a>
+                  <a href="tel:+79507822966">+7 (950) 782-29-66</a>
                 </div>
                 <div className="d-fl-col footer__text">
-                  <a href="">korobko.studio@mail.ru</a>
+                  <a href="mailto:korobko.studio@gmail.ru">
+                    korobko.studio@gmail.ru
+                  </a>
                 </div>
               </div>
             </div>
             <div className="d-fl-col footer__text footer__studio">
               <span>Студия</span>
-              <div className="d-fl-wrap footer__text footer-gap">
-                <a href="">Почему мы</a>
-                <a href="">Что мы делаем</a>
-                <a href="">Наши работы</a>
-                <a href="">Контакты</a>
-              </div>
-              <span>Россия г. Омск</span>
+              <ul className="d-fl-wrap footer__text footer-gap">
+                <li>
+                  <a href="#about">Почему мы</a>
+                </li>
+                <li>
+                  <a href="#work">Что мы делаем</a>
+                </li>
+                <li>
+                  <a href="#portfolio">Наши работы</a>
+                </li>
+                <li>
+                  <a href="#contacts">Контакты</a>
+                </li>
+              </ul>
+              <address className="footer__address">Россия г. Омск</address>
             </div>
           </div>
         </div>

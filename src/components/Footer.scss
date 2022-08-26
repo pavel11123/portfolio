@@ -14,12 +14,19 @@
   @media (max-width: 1310px) {
     padding: rem(40) rem(15);
   }
+
+  & > .section-wrap {
+    .section__block {
+      flex: 1 1 rem(285.5);
+    }
+  }
 }
 
 .footer__info {
   padding: rem(35) 0;
 
-  h6 {
+  h1,
+  h5 {
     font-weight: 400;
     font-size: rem(14);
     line-height: rem(20);
@@ -30,15 +37,21 @@
 .footer__block-right {
   max-width: rem(400);
   margin-left: auto;
+
+  @media (max-width: 600px) {
+    margin-left: 0;
+  }
 }
 
 .footer__text {
   span,
-  a {
+  a,
+  address {
     font-weight: 400;
     font-size: rem(14);
     line-height: rem(20);
     letter-spacing: 0.01em;
+    font-style: normal;
   }
 }
 
@@ -47,5 +60,9 @@
 }
 
 .footer-gap {
-  gap: rem(15);
+  column-gap: rem(15);
+}
+
+.footer__address {
+  padding-top: rem(10);
 }

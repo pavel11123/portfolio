@@ -48,7 +48,8 @@ const ContactUs = () => {
           class="input"
           autocomplete="off"
           placeholder=" "
-          required=""
+          required=" "
+          x-webkit-speech
         />
         <label className="input__label" for="user_name-popup">
           Имя
@@ -63,7 +64,8 @@ const ContactUs = () => {
           class="input"
           autocomplete="off"
           placeholder=" "
-          required=""
+          required=" "
+          x-webkit-speech
         />
         <label className="input__label" for="user_phone-popup">
           Телефон
@@ -78,6 +80,10 @@ const ContactUs = () => {
           class="input input-comments"
           autocomplete="off"
           placeholder=" "
+          autocorrect="off"
+          x-webkit-speech
+          spellcheck="true"
+          autocapitalize="off"
         />
         <label className="input__label" for="user_comments-popup">
           Комментарий
