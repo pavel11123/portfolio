@@ -73,7 +73,7 @@ const ContactUs = () => {
       </div>
 
       <div class="form__group d-fl">
-        <input
+        <textarea
           type="text"
           name="user_comments"
           id="user_comments-popup"
@@ -93,7 +93,6 @@ const ContactUs = () => {
       <button type="submit" className="btn form__btn">
         Заказать
       </button>
-      <div className="messageBlockForm">Сообщение успешно отправленно!</div>
     </form>
   );
 };

@@ -35,7 +35,7 @@ const Form = () => {
         </div>
 
         <div class="form__group d-fl">
-          <input
+          <textarea
             type="text"
             name="user_comments"
             id="user_comments-popup"
@@ -51,7 +51,6 @@ const Form = () => {
         <button type="submit" class="btn form__btn">
           Заказать
         </button>
-        <div class="messageBlockForm">Сообщение успешно отправленно!</div>
       </form>
     </>
   );

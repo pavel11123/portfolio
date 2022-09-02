@@ -136,7 +136,7 @@ const Homepage = () => {
               <div className="d-fl block__start-bottom">
                 <div
                   className="num"
-                  data-tooltip="Всплывающая подсказка сообщает о чём-то многозначном и полезном..."
+                  data-tooltip="Мы делаем удобные, качественные и продающие сайты!"
                 >
                   <svg>
                     <use xlinkHref="/sprite.svg#num"></use>
@@ -631,19 +631,14 @@ const Homepage = () => {
 
       <Modal active={modalActive} setActive={setModalActive}>
         <div className="d-fl">
-          <div className="form-left d-fl-col">
+          <div className="modal-left d-fl-col">
             <div className="modal-top">
               <h6>учпочмак ел, кумыс пил, сайт где?</h6>
             </div>
             <ContactUsModal></ContactUsModal>
           </div>
-          <div className="form-right d-fl-col">
-            <div className="form__img">
-              <img
-                src="/img/photo/form-img.png"
-                alt="Разработка сайтов с нуля до выгрузки на хостинг"
-              />
-            </div>
+          <div className="modal-right">
+            <div className="modal__img"></div>
           </div>
         </div>
       </Modal>

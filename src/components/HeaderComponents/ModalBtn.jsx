@@ -16,7 +16,7 @@ const ModalBtn = () => {
 
       <Modal active={modalActive} setActive={setModalActive}>
         <div className="d-fl">
-          <div className="form-left d-fl-col">
+          <div className="modal-left d-fl-col">
             <div className="modal-top">
               <h6>
                 Сделайте заказ прямо сейчас и получите доменное имя в подарок!
@@ -24,13 +24,8 @@ const ModalBtn = () => {
             </div>
             <ContactUsModal></ContactUsModal>
           </div>
-          <div className="form-right d-fl-col">
-            <div className="form__img">
-              <img
-                src="/img/photo/form-img.png"
-                alt="Разработка сайтов с нуля до выгрузки на хостинг"
-              />
-            </div>
+          <div className="modal-right d-fl-col">
+            <div className="modal__img"></div>
           </div>
         </div>
       </Modal>

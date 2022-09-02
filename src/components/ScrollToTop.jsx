@@ -6,7 +6,7 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 600) {
         setShowScrollTopButton(true);
       } else {
         setShowScrollTopButton(false);
@@ -21,14 +21,11 @@ const ScrollToTop = () => {
     });
   };
   return (
-    <div>
+    <>
       {showScrollTopButton && (
-        <span
-          className="top-btn-position top-btn-style"
-          onClick={scrollTop}
-        ></span>
+        <div className="btn__top" onClick={scrollTop}></div>
       )}
-    </div>
+    </>
   );
 };
 

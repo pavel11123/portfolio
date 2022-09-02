@@ -33,6 +33,7 @@
   color: rgba(44, 31, 36, 0.5);
   padding: rem(12) rem(28);
   flex: 1 1 auto;
+  resize: none;
 
   &-comments {
     min-height: rem(170);
@@ -138,12 +139,3 @@
     width: 100%;
   }
 }
-
-/*------------------Сообщение вывода после отправки------------------*/
-.messageBlockForm {
-  display: none;
-}
-.messageBlockForm.active {
-  display: block;
-}
-/*------------------Сообщение вывода после отправки------------------*/

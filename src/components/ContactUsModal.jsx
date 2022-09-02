@@ -35,7 +35,7 @@ const ContactUsModal = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="form__main d-fl-col">
+    <form ref={form} onSubmit={sendEmail} className="modal__form d-fl-col">
       <div className="form__group d-fl">
         <input
           type="text"
@@ -69,7 +69,7 @@ const ContactUsModal = () => {
       </div>
 
       <div class="form__group d-fl">
-        <input
+        <textarea
           type="text"
           name="user_comments"
           id="user_comments-popup"
@@ -86,10 +86,9 @@ const ContactUsModal = () => {
         </label>
       </div>
 
-      <button type="submit" className="btn form__btn">
+      <button type="submit" className="btn modal__btn">
         Заказать
       </button>
-      <div className="messageBlockForm">Сообщение успешно отправленно!</div>
     </form>
   );
 };
