@@ -1,0 +1,55 @@
+// .btn-scroll-up {
+//   width: 20px;
+//   height: 20px;
+//   background-color: #000000;
+//   position: fixed;
+//   right: 0;
+//   bottom: 80px;
+//   right: 60px;
+//   z-index: 999;
+//   cursor: pointer;
+//   transition: 0.3s;
+//   -webkit-transition: 0.3s;
+//   -moz-transition: 0.3s;
+//   -ms-transition: 0.3s;
+//   -o-transition: 0.3s;
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 16px;
+//   letter-spacing: 0.05em;
+//   color: #000000;
+//   -webkit-box-orient: vertical;
+//   -webkit-box-direction: normal;
+//   -ms-flex-direction: column;
+//   flex-direction: column;
+//   -webkit-box-align: center;
+//   -ms-flex-align: center;
+//   align-items: center;
+//   -webkit-box-pack: center;
+//   -ms-flex-pack: center;
+//   justify-content: center;
+// }
+
+/* scroll to top button */
+.top-btn-position {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+}
+
+.top-btn-style {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.top-btn-style:hover {
+  animation: none;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
+}
