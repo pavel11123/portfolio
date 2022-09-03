@@ -73,7 +73,7 @@ const ContactUsModal = () => {
           type="text"
           name="user_comments"
           id="user_comments-popup"
-          class="input input-comments"
+          class="input modal__input-comments"
           autocomplete="off"
           placeholder=" "
           autocorrect="off"

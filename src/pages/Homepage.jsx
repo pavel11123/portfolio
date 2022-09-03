@@ -100,40 +100,42 @@ const Homepage = () => {
         >
           <div className="container">
             <div className="d-fl-col block__start">
-              <div className="title__start title__start-top d-fl-col">
-                <motion.span
-                  variants={textAnimation}
-                  custom={2}
-                  className="title__start-big"
-                >
-                  WaNNa
-                </motion.span>
-                <motion.span
-                  variants={textAnimation}
-                  custom={2}
-                  className="title__start-small"
-                >
-                  BaNaNa?
-                </motion.span>
+              <div className="start__block-center d-fl-col">
+                <div className="title__start title__start-top d-fl-col">
+                  <motion.span
+                    variants={textAnimation}
+                    custom={2}
+                    className="title__start-big"
+                  >
+                    WaNNa
+                  </motion.span>
+                  <motion.span
+                    variants={textAnimation}
+                    custom={2}
+                    className="title__start-small"
+                  >
+                    BaNaNa?
+                  </motion.span>
+                </div>
+                <div className="img__start">
+                  <motion.img
+                    variants={bananaAnimation}
+                    custom={1}
+                    src="/img/photo/banana.webp"
+                    alt="Коробко веб студия - Хочешь банан? Или сайт?"
+                  />
+                </div>
+                <div className="title__start title__start-bottom d-fl-col">
+                  <motion.span
+                    variants={textAnimation}
+                    custom={3}
+                    className="title__start-small"
+                  >
+                    or site?
+                  </motion.span>
+                </div>
               </div>
-              <div className="img__start">
-                <motion.img
-                  variants={bananaAnimation}
-                  custom={1}
-                  src="/img/photo/banana.webp"
-                  alt="Коробко веб студия - Хочешь банан? Или сайт?"
-                />
-              </div>
-              <div className="title__start title__start-bottom d-fl-col">
-                <motion.span
-                  variants={textAnimation}
-                  custom={3}
-                  className="title__start-small"
-                >
-                  or site?
-                </motion.span>
-              </div>
-              <div className="d-fl block__start-bottom">
+              <div className="d-fl start__block-bottom">
                 <div
                   className="num"
                   data-tooltip="Мы делаем удобные, качественные и продающие сайты!"

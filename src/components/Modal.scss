@@ -87,11 +87,11 @@
       line-height: adaptiv-num-rem(20, 24, 1280, 320);
     }
 
-    @media (max-width: 550px) {
-      font-size: adaptiv-num-rem(16, 20, 1280, 320);
-      line-height: adaptiv-num-rem(20, 24, 1280, 320);
-      padding: adaptiv-num-rem(10, 45, 550, 320) 0
-        adaptiv-num-rem(40, 75, 550, 320) 0;
+    @media (max-width: 600px) {
+      font-size: adaptiv-num-rem(16, 20, 600, 320);
+      line-height: adaptiv-num-rem(20, 24, 600, 320);
+      padding: adaptiv-num-rem(10, 25, 600, 320) 0
+        adaptiv-num-rem(25, 45, 600, 320) 0;
     }
   }
 }
@@ -120,6 +120,12 @@
 
   @media (max-width: 600px) {
     gap: adaptiv-num-rem(15, 25, 600, 320);
+  }
+}
+
+.modal__input-comments {
+  @media (max-width: 600px) {
+    height: adaptiv-num-rem(100, 170, 600, 320);
   }
 }
 
