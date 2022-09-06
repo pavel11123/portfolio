@@ -7,6 +7,7 @@
 .block__start {
   position: relative;
   min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100); // делаем 100vh на телефоне + js
 }
 
 .start__block-center {
@@ -77,13 +78,8 @@
 }
 
 .img__start {
-  // position: absolute;
-  // z-index: 0;
   width: 655px;
   height: 310px;
-  // left: 0;
-  // right: 0;
-  // top: 145px;
   margin: 0 auto;
 
   @media (max-width: 1280px) {
