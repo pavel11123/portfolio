@@ -44,14 +44,14 @@ const ContactUs = () => {
         <input
           type="text"
           name="user_name"
-          id="user_name-popup"
+          id="user_name"
           class="input"
           autocomplete="off"
           placeholder=" "
           required=" "
           x-webkit-speech
         />
-        <label className="input__label" for="user_name-popup">
+        <label className="input__label" for="user_name">
           Имя
         </label>
       </div>
@@ -60,14 +60,14 @@ const ContactUs = () => {
         <input
           type="text"
           name="user_phone"
-          id="user_phone-popup"
+          id="user_phone"
           class="input"
           autocomplete="off"
           placeholder=" "
           required=" "
           x-webkit-speech
         />
-        <label className="input__label" for="user_phone-popup">
+        <label className="input__label" for="user_phone">
           Телефон
         </label>
       </div>
@@ -76,7 +76,7 @@ const ContactUs = () => {
         <textarea
           type="text"
           name="user_comments"
-          id="user_comments-popup"
+          id="user_comments"
           class="input input-comments"
           autocomplete="off"
           placeholder=" "
@@ -85,7 +85,7 @@ const ContactUs = () => {
           spellcheck="true"
           autocapitalize="off"
         />
-        <label className="input__label" for="user_comments-popup">
+        <label className="input__label" for="user_comments">
           Комментарий
         </label>
       </div>
